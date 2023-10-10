@@ -53,7 +53,7 @@ fun PhotoListItem(photo: UnsplashPhoto, onClick: () -> Unit) {
 fun ImageListItem(name: String, imageUrl: String, onClick: () -> Unit) {
     Card(
         onClick = onClick,
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.inversePrimary),
         modifier = Modifier
             .padding(horizontal = dimensionResource(id = R.dimen.card_side_margin))
             .padding(bottom = dimensionResource(id = R.dimen.card_bottom_margin))
