@@ -97,7 +97,7 @@ private fun GardenList(
     val gridState = rememberLazyGridState()
     ReportDrawnWhen { gridState.layoutInfo.totalItemsCount > 0 }
     LazyVerticalGrid(
-        columns = GridCells.Fixed(2),
+        columns = GridCells.Fixed(3),
         modifier,
         state = gridState,
         contentPadding = PaddingValues(
@@ -153,7 +153,7 @@ private fun GardenListItem(
                 Modifier
                     .padding(vertical = marginNormal)
                     .align(Alignment.CenterHorizontally),
-                style = MaterialTheme.typography.titleMedium,
+                style = MaterialTheme.typography.titleSmall,
             )
 
             // Planted date
